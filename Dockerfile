@@ -12,7 +12,7 @@ WORKDIR /root/workspace
 
 ENV XDG_DATA_HOME /root/.local/share
 ENV PATH ${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH
-RUN curl -sSfL -O https://raw.githubusercontent.com/aquaproj/aqua-installer/v2.25.1/aqua-installer
+RUN curl -sSfL -O https://raw.githubusercontent.com/aquaproj/aqua-installer/v3.0.0/aqua-installer
 RUN chmod +x aqua-installer
 RUN ./aqua-installer
 
